@@ -1,0 +1,199 @@
+body{
+    margin:0;
+    padding:0;
+    overflow-x: hidden;
+}
+.bg{
+   position: relative;
+   background: url('flat-cityscape-pack_23-2147532077.webp');
+   height: 200vh;
+  
+
+}
+
+.car_1{
+    width: 200px;
+    transform:rotateY(-180deg) ;
+    position: absolute;
+    top: 100px;
+    background-position: 0 0 ;
+    animation-name: moving;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+   
+}
+.stop{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: red;
+    line-height: 80px;
+    text-align: center;
+    color: #fff;
+    position: absolute;
+   
+    font-weight: bold;
+    font-size: 20px;
+    animation-name: animate  ;
+    opacity: 0;
+    animation-delay: 3s;
+    animation-duration:1s ;
+    animation-iteration-count: 2;
+
+}
+.stop_1{
+    right: 20px;
+    top: 10px;
+    
+}
+.stop_2{
+left: 0;
+top:250px ;
+animation-delay: 9s;
+}
+.stop_3{
+    right:0 ;
+    top:490px ;
+    animation-delay: 13s;  
+}
+.stop_4{
+    left: 0 ;
+    top:750px ;
+    animation-delay: 19s; 
+
+}
+.stop_5{
+    right: 0 ;
+    top:950px ;
+    animation-delay: 22s;  
+}
+.stop_6{
+    left: 0 ;
+    bottom: 180px ;
+    animation-delay: 29s;  
+}
+.car_2{
+     width: 200px;
+   
+     right: 0;
+     position: absolute;
+     top: 300px;
+     background-position: 0 0 ;
+     animation-name: moving;
+     animation-duration: 5s;
+     animation-fill-mode: forwards;
+     animation-delay: 5s;
+     animation-direction: alternate-reverse;
+   
+}
+.car_3{
+    width: 200px;
+    transform:rotateY(-180deg) ;
+    left: 0;
+    position: absolute;
+    top:550px;
+    background-position: 0 0 ;
+    animation-name: moving;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+    animation-delay: 10s;
+    
+   
+}
+.car_4{
+    width: 200px;
+    
+    right: 0;
+    position: absolute;
+    top:830px;
+    background-position: 0 0 ;
+    animation-name: moving;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+    animation-delay: 15s;
+    animation-direction: alternate-reverse;
+  
+}
+.car_5{
+    width: 200px;
+    transform:rotateY(-180deg) ;
+    left: 0;
+    position: absolute;
+    top:1050px;
+    background-position: 0 0 ;
+    animation-name: moving;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+    animation-delay: 20s;
+   
+    
+   
+}
+.car_6{
+    width: 200px;
+    
+    right: 0;
+    position: absolute;
+    top:1290px;
+    background-position: 0 0 ;
+    animation-name: moving;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+    animation-delay: 25s; 
+    animation-direction: alternate-reverse; 
+}
+
+@keyframes moving{
+ 0%{
+      left: 0;
+ }
+  
+    /* 25%{
+        left:100px;
+        
+      
+}
+
+ 
+    50%{
+        left: 500px;
+        
+       
+       
+}
+    
+    75%{
+        left:900px;
+        
+       
+} */
+    100%{
+      left: 1300px;
+      
+    }
+    
+  
+  
+}
+@keyframes animate {
+    0% {
+      box-shadow: 0 0 0 0 rgba(255, 109, 74, 0.7), 0 0 0 0 rgba(255, 109, 74, 0.7);
+     opacity: 0;
+    }
+  
+    40% {
+      box-shadow: 0 0 0 50px rgba(255, 109, 74, 0), 0 0 0 0 rgba(255, 109, 74, 0.7);
+      opacity: 0.3;
+    }
+  
+    80% {
+      box-shadow: 0 0 0 50px rgba(255, 109, 74, 0), 0 0 0 30px rgba(255, 109, 74, 0);
+      opacity: 0.6;
+    }
+  
+    100% {
+      box-shadow: 0 0 0 0 rgba(255, 109, 74, 0), 0 0 0 30px rgba(255, 109, 74, 0);
+      display: block;
+      opacity: 1;
+    }
+  }
